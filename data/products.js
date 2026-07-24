@@ -656,5 +656,33 @@ const products = [
       "apparel",
       "mens"
     ]
+  },{
+    id:"bc2847e9-5323-403f-b7cf-576fde044v555",
+    image:"images/products/backpack.jpg",
+    name:"Asthetic backpack",
+    rating:{
+      stars:4,
+      count:68
+    },
+    priceCents: 220,
+    keywords: [
+      "bag",
+      "black bag",
+      "backpack"
+    ]
+  },{
+    id:"bc6747e9-5323-303f-b7cf-576fde044v555",
+    image:"images/products/umbrella.jpg",
+    name:"Asthetic backpack",
+    rating:{
+      stars:4.5,
+      count:89
+    },
+    priceCents: 2220,
+    keywords: [
+      "umbrella",
+      "chatta",
+      "chattri"
+    ]
   }
 ];
