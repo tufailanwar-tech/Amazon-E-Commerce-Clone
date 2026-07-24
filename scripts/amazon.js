@@ -1,3 +1,5 @@
+import {cart} from '../data/cart.js';
+
 let productHtml='';
 products.forEach((product) =>{
   productHtml +=
@@ -69,7 +71,7 @@ document.querySelectorAll('.js-add-to-cart').forEach((button)=>{
     setTimeout(()=>{
       addedMessage.classList.remove('added-to-cart-visible');
     },1000);
-    
+
     const quantity = Number(
       document.querySelector(`.js-quantity-selector-${productId}`).value
     );
