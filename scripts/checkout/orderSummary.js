@@ -8,9 +8,10 @@ import { formatCurrency } from '../utils/money.js';
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
 
 import {deliveryOptions,getDeliveryOption} from '../../data/deliveryOptions.js'
-const today=dayjs();
-const deliveryDate=today.add(7,'days');
-// deliveryDate.format('dddd , MMMM ,D');
+
+import { renderPaymentSummary } from './paymentsummary.js';
+
+
 
 
 export function renderOrderSummary(){
@@ -134,6 +135,8 @@ export function renderOrderSummary(){
         `.js-cart-item-container-${productId}`
       );
       container.remove();
+
+      renderPaymentSummary();
     });
   });
 
@@ -145,6 +148,8 @@ export function renderOrderSummary(){
         updateDeliveryOption(productId, deliveryOptionId);
         
         renderOrderSummary();
+
+        renderPaymentSummary();
       })
     })
   }
