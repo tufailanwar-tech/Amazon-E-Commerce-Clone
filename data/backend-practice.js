@@ -4,5 +4,5 @@ xhr.addEventListener('load',()=>{
   console.log(xhr.response)
 });
 
-xhr.open('GET', 'https://supersimplebackend.dev/not-support');
+xhr.open('GET', 'https://supersimplebackend.dev/products');
 xhr.send();
